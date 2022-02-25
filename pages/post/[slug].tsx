@@ -94,7 +94,7 @@ function Post({ post }: Props) {
         </div>
       </article>
 
-      <hr className="my-5 mx-auto max-w-lg border border-yellow-500" />
+      <hr className="my-5 mx-auto max-w-2xl border border-yellow-500" />
 
       {submitted ? (
         <div className="my-10 mx-auto flex max-w-2xl flex-col bg-yellow-500 p-10 text-white">
@@ -170,18 +170,20 @@ function Post({ post }: Props) {
       )}
 
       {/* Comments */}
-      <div className="my-10 mx-auto flex max-w-2xl flex-col space-y-2 p-10 shadow shadow-yellow-500">
-        <h3 className="text-4xl">Comments</h3>
-        <hr />
+      <div className="my-10 mx-auto flex max-w-2xl flex-col space-y-2 p-5 ">
+        <div className="p-5 shadow shadow-yellow-500">
+          <h3 className="mb-5 text-4xl">Comments</h3>
+          <hr className="mb-5" />
 
-        {post.comments.map((comment) => (
-          <div key={comment._id}>
-            <p>
-              <span className="text-yellow-500">{comment.name}:</span>
-            </p>
-            {comment.comment}
-          </div>
-        ))}
+          {post.comments.map((comment) => (
+            <div key={comment._id} className="mb-2">
+              <p>
+                <span className="text-yellow-500">{comment.name}:</span>
+              </p>
+              {comment.comment}
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   )
