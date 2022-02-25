@@ -1,4 +1,10 @@
 Medium Blog Clone
 https://sanity-medium-clone-sage.vercel.app/
 
-file:///var/folders/pr/w5bjq3yn6k5cgrnh4mtrt24c0000gp/T/TemporaryItems/NSIRD_screencaptureui_B5ffo6/Screen%20Shot%202022-02-25%20at%207.29.07%20pm.png
+Stack:
+- NextJS
+- Typescript
+- Sanity.io
+- Tailwind CSS
+
+![image](https://user-images.githubusercontent.com/83804066/155681684-ad152213-f938-4dc7-a841-e42ad4aa51d6.png)
